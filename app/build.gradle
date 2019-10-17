@@ -4,7 +4,13 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
+    dataBinding {
+        enabled = true
+    }
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "jermaine.databindingworkshop"
